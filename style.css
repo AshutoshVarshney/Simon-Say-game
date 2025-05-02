@@ -1,0 +1,92 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(45deg, #2c3e50, #34495e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #2d3e50;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  color: #ecf0f1;
+  font-size: 36px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.game-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.green {
+  background-color: #2ecc71;
+}
+
+.red {
+  background-color: #e74c3c;
+}
+
+.yellow {
+  background-color: #f1c40f;
+}
+
+.blue {
+  background-color: #3498db;
+}
+
+.pressed {
+  transform: scale(0.9);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+.game-status {
+  color: #ecf0f1;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer {
+  color: #ecf0f1;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.game-over {
+  background-color: #e74c3c !important;
+}
+
+h1,
+.game-status,
+.footer {
+  font-family: 'Roboto', sans-serif;
+}
+
